@@ -649,7 +649,7 @@ script.on_event(defines.events.on_built_entity, function(event)
         return
     end
     -- Sladki
-	if event.created_entity.name == "entity-ghost" then
+    if event.created_entity.name == "entity-ghost" then
         if event.created_entity.ghost_prototype.type == "electric-pole" then
             onPoleBuilt(event.created_entity, game.players[event.player_index])
         end
